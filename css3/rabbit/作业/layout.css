@@ -1,0 +1,123 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgb(196, 228, 253) 40%, #fff 55%, rgb(148, 190, 89));
+
+}
+
+.sky {
+    width: 100%;
+    height: 50%;
+}
+
+.cloud {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    top: 200px;
+    left: 600px;
+
+}
+
+.cloud:before {
+    content: "";
+    width: 170px;
+    height: 50px;
+    background: #fff;
+    border-radius: 25px/25px;
+    position: absolute;
+    top: 50px;
+    left: -55px;
+}
+
+.cloud:after {
+    content: "";
+    width: 100px;
+    height: 50px;
+    background: #fff;
+    border-radius: 25px/25px;
+    position: absolute;
+    top: 40px;
+    left: -55px;
+    transform: rotate(55deg);
+}
+.cloud0 {
+    animation-name: translate;
+    animation-duration: var(--t);
+    animation-timing-function: linear;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.cloud1 {
+    top: -80px;
+    transform: scale(0.6);
+
+    animation-name: translate;
+    animation-duration: var(--t);
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  
+}
+
+.cloud2 {
+    top: -180px;
+    left: 860px;
+    transform: scale(0.9);
+
+    animation-name: translate;
+    animation-duration: var(--t);
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.cloud3 {
+    top: 15px;
+    left: 500px;
+    transform: scale(0.8);
+
+    animation-name: translate;
+    animation-duration: var(--t);
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.cloud4 {
+    top: -110px;
+    left: 770px;
+    transform: scale(0.5);
+
+    animation-name: translate;
+    animation-duration: var(--t);
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+
+@keyframes translate {
+    from {
+        left: 110%
+    }
+    to {
+        left: -10%;
+    }
+}
+
+.rabbit {
+    position: absolute;
+    bottom: 50px;right: 200px;
+   
+}
+.rabbit img {
+    width: 150px;height: auto;
+}

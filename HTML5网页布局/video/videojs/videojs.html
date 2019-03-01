@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="video-js.min.css">
+    <script src="video.min.js"></script>
+</head>
+<body>
+    <video id="my-video" class="video-js vjs-big-play-centered" controls data-setup="{}" width="960" height="400" preload="auto" poster="../data/poster.jpg">
+        <source src="../data/imooc.mp4">
+    </video>
+    <script>    
+    myVideo=videojs("my-video")
+        videojs("my-video").ready(function(){
+          console.log(myVideo);
+          console.log(myVideo.duration());
+          
+        })
+    </script>
+</body>
+</html>

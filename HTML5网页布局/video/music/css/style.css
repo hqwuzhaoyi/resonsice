@@ -1,0 +1,119 @@
+*{
+    margin:0;padding:0;
+}
+
+.outerNode {
+    width:505px;
+    height:406px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-204px 0 0 -253.5px; 
+    border : 1px solid #a6a18d;
+    border-radius:8px;
+    box-shadow:0 0 16px #a6a18d;
+}
+
+.innerNode {
+    width:503px;
+    height:405px;
+    border-top:1px solid #e1d1b9;
+    border-right:1px solid #ceccbf;
+    border-left:1px solid #ceccbf;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.topNode {
+    width: 100%;
+    height: 198px;
+    border-bottom: 1px solid #787463;
+    background: url(../music/pic/fmt01.jpg) center center;
+    background-size: cover;
+    transition: .8s;
+
+}
+
+.lineNode {
+    width: 100%;
+    height: 46px;
+    border-top: 1px solid #f9f7ee;
+    border-bottom: 1px solid #a29d8a;
+    background: url(../musicimage/linebg.jpg) repeat-x;
+}
+.progressNode{
+    width: 440px;height: 18px;float: left;
+    margin: 13px 0 0 28px;background: url(../musicimage/progressbg.jpg) repeat-x;position: relative;
+}
+.progressLeft{
+    width: 7px;
+    height: 100%;
+    position: absolute;
+    left:0;
+    background: url(../musicimage/leftNode.jpg);
+}
+.progressRight{
+    width: 7px;
+    height: 18px;
+    position: absolute;
+    right:0;
+    background: url(../musicimage/rightNode.jpg);
+}
+.trueLine {
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    width: 0;
+    height: 12px;
+    background: url(../musicimage/green_bg.png) repeat-x;
+    border-radius: 6px;
+    border-right: 1px solid #787463;
+}
+.bottomNode{
+    width: 100%;height: 157px;
+    border-top: 1px solid #a29d8a;
+    background: url(../musicimage/bottombg.jpg);
+    position: absolute;
+}
+.preNode{
+    width: 75px;
+    height: 74px;
+    position: absolute;
+    background:url(../musicimage/lastBg.png) no-repeat;
+    top: 39px;
+    left: 118px;
+    cursor: pointer;
+}
+.playNode{
+    width: 95px;
+    height: 94px;
+    position: absolute;
+    background: url(../musicimage/playNode.png) no-repeat;
+    top: 29px;
+    left:202px;
+    cursor: pointer;
+}
+.nextNode{
+    width: 75px;
+    height: 74px;
+    position: absolute;
+    background:url(../musicimage/nextBg.png) no-repeat;
+    top: 39px;
+    left: 306px;
+    cursor: pointer;
+}
+.volumeNode{
+    width: 37px;
+    height:32px;
+    background: url(../musicimage/volume.png);
+    position: absolute;
+    right: 43px;
+    top: 58px;
+    cursor: pointer;
+}
+.musicName{
+    color: #fff;
+    line-height: 200px;
+    width: 500px;
+    text-align: center;
+    font-weight: bold;
+}

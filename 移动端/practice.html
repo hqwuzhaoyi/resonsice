@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /* 在此处补充代码*/
+     *{
+         margin: 0;padding: 0;
+     }
+     header {
+         box-sizing: border-box;
+         width: 100vw;
+         height: 100px;
+         background: #000;
+         display:flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items:center;
+         padding:0 20px;
+     }
+     ul {
+         display: flex;
+         list-style: none;
+     
+         font-size: 20px;
+         color: #fff;
+         flex: 1;
+     }
+     ul li {
+         width: 100px;
+        text-align: center;
+        cursor: pointer;
+     }
+
+     div.logo {
+         flex: 1;
+     }
+     div.login {
+        flex: 1;
+        text-align: center;
+     }
+     div.login input[type=button] {
+        cursor: pointer;
+        background: orange;
+        border:none;
+        border-radius:15%/25%;
+        font-size: 16px;
+        color:#fff;
+        padding: 4px;
+        margin-right: 20px;
+     }
+
+     section {
+        width: 100vw;
+        display:flex;
+        justify-content:space-around;
+        align-content: flex-start;
+        flex-wrap:wrap;
+
+     }
+    div.section {
+        width: 880px;  height: 200px;
+        background:#add8e6;
+        border-radius: 5px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding:40px;
+      box-sizing: border-box;
+    }
+    div.section div.box {
+        font-size: 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    div.section div.shopping {
+        display: flex;
+        align-items:center;
+      
+    }
+    div.section div.shopping .btn {
+        background: orange;
+        border-radius: 12%/25%;
+        width:150px;height: 60px;
+        text-align: center;
+        color:#fff;
+        cursor: pointer;
+        line-height: 60px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="logo">
+            <img src="http://climg.mukewang.com/59197ab000014f1503000100.jpg" alt="">
+        </div>
+        <ul class="nav">
+            <li>课程</li>
+            <li>路径</li>
+            <li>猿问</li>
+            <li>手记</li>
+        </ul>
+        <div class="login">
+            <input type="button" value="登录">
+            <input type="button" value="注册">
+        </div>
+    </header>
+    <!-- 主体内容 -->
+    <section>
+        <div class="section">
+            <div class="box">
+                <p>《前端小白入门手册》</p>
+                <div>适用人群：没有任何前端基础的小白</div>
+                <div>费用：￥499</div>
+            </div>
+            <div class="shopping">
+                <div class="btn">加入购物车</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="box">
+                <p>《HTML5月CSS3实现动态网页》</p>
+                <div>适用人群：有html和css基础的童鞋</div>
+                <div>费用：￥599</div>
+            </div>
+            <div class="shopping">
+                <div class="btn">加入购物车</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="box">
+                <p>《前端小白入门手册》</p>
+                <div>适用人群：没有任何前端基础的小白</div>
+                <div>费用：￥499</div>
+            </div>
+            <div class="shopping">
+                <div class="btn">加入购物车</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="box">
+                <p>《HTML5月CSS3实现动态网页》</p>
+                <div>适用人群：有html和css基础的童鞋</div>
+                <div>费用：￥599</div>
+            </div>
+            <div class="shopping">
+                <div class="btn">加入购物车</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

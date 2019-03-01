@@ -1,0 +1,277 @@
+.clearfix:after {
+    content:" ";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    zoom: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 100%;
+    min-width: 800px;
+}
+
+header .container img {
+    display: block;
+    float: left;
+    line-height: 94px;
+    margin-top: 31.5px;
+}
+
+header .container nav {
+    float: right;
+    height: 94px;
+}
+
+header .container nav a {
+    display: inline-block;
+    line-height: 94px;
+    height: 100%;
+    padding-right: 50px;
+}
+header .container nav a:hover{
+    color: #f46208;
+}
+.banner {
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 60px;
+    color: #fff;
+    width: 630px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -314.5px;
+}
+
+.banner p {
+    font-size: 20px;
+    color: #fff;
+    width: 630px;
+    height: 26px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 40px;
+    margin-left: -314.5px;
+}
+
+.portfolio {}
+.portfolio .containt {
+    width: 100%;
+    height: 410px;
+}
+.portfolio .containt .title,
+.stats .title,
+.team .title,
+.contactus  .title
+ {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500 ;
+    color: #f46208;
+    padding-top: 122px;
+    letter-spacing:12px;
+}
+.portfolio .containt p,
+.stats p,
+.team p,
+.contactus  p{
+    font-size: 14px;
+    text-align: center;
+    width: 780px;
+    margin-top: 60px;
+    margin: 60px auto 0 auto;
+}
+.team p{
+    color: #fff;
+}
+.portfolio .containt .block{
+    width: 100%;
+    height: 144px;
+    text-align: center;
+}
+.portfolio .containt .block .block-item{
+    display: inline-block;
+    font-size: 16px;
+    color: #f46208;
+    padding: 14px;
+    border: 1px solid #f46208;
+    margin: 8px;
+    margin-top: 46.5px;
+    cursor: pointer;
+    transition: .2s;
+}
+.portfolio .containt .block .block-item:hover {
+    background: #f46208;
+    color: #fff;
+}
+.portfolio img {
+    display: block;
+    width: 100%;
+    height: 560px;
+    background: url(../image/portfolio-nav-img.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.stats{
+
+}
+.stats .block {
+    width: 900px;
+    height: 298px;
+    margin: 0 auto;
+}
+.stats .block .block-item {
+    float: left;
+    width: 150px;
+    margin-top: 70px;
+    margin-right: 100px;
+    text-align: center;
+}
+.stats .block .block-item:last-child{
+    margin-right: 0;
+}
+.stats .block .block-item .block-img {
+    width: 48px;
+    height: 52px;
+    background: url(../image/stats1.jpg);
+    margin: 0 auto;
+}
+.stats .block .block-item:nth-of-type(2) .block-img {
+    background-image:  url(../image/stats2.jpg);
+    width: 53px;
+}
+.stats .block .block-item:nth-of-type(3) .block-img {
+    width: 64px;
+    background-image:  url(../image/stats3.jpg);
+}
+.stats .block .block-item:nth-of-type(4) .block-img {
+    width: 68px;
+    background-image:  url(../image/stats4.jpg);
+}
+.stats .block .block-item .block-name {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.stats .block .block-item  .block-number{
+    font-size: 23px;
+    font-weight: color;
+    padding-top: 30px;
+    color: #f46208;
+    letter-spacing:12px;
+}
+
+
+.team .block {
+    width: 840px;
+    
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.team .block .block-item {
+    width: 240px;
+    margin-right: 60px;
+    float: left;
+    text-align: center;color: #fff;
+    line-height: 1.2em;
+}
+.team .block .block-item:last-child{
+    margin-right: 0;
+}
+.team .block .block-item .block-img{
+    width: 200px;
+    height:200px;
+    background: url(../image/team1.jpg);
+    margin: 0 auto;
+}
+.team .block .block-item:nth-of-type(2) .block-img{
+    background: url(../image/team2.jpg);
+}
+.team .block .block-item:nth-of-type(3)  .block-img{
+    background: url(../image/team3.jpg);
+}
+
+.team .block .block-item .block-name{
+    font-size: 13px;
+}
+.team .block .block-item .block-introduction{
+    font-size: 11px;
+}
+.team p,.contactus p{
+    margin-top: 50px;
+}
+
+.contactus form {
+    width: 952px;
+    margin: 0 auto;
+    padding-top: 70px;
+  
+}
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+.contactus form input[type="text"]{
+    width: 461px;height: 52px;
+    border: 1px solid #bfbfbf;
+    margin-right: 21px;  text-indent: 1em;
+}
+.contactus form input[type=email]{
+    width: 461px;height: 52px;
+    border: 1px solid #bfbfbf;  text-indent: 1em;
+}
+
+.contactus form textarea {
+    margin-top: 17px;
+    width: 100%;
+    height: 270px;
+    text-indent: 1em;
+}
+textarea::-webkit-input-placeholder{
+  
+    line-height: 270px;
+}
+textarea:-moz-placeholder{
+  
+    line-height: 270px;
+}
+textarea::-moz-placeholder{
+   
+    line-height: 270px;
+}
+textarea:-ms-input-placeholder{
+  
+    line-height: 270px;
+}
+.contactus form button.btn {
+    width: 200px;
+    height: 57px;
+    margin-top: 24px;
+    background: #f46208;
+    color: #fff;
+    font-size: 19px;
+    line-height: 57px;
+    position: relative;
+    left: 50%;
+    margin-left: -100px;
+    border: none;
+    cursor:pointer;
+}

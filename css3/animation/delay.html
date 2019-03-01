@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-4</title>
+    <style type="text/css">
+        div {
+            font-family: 'Microsoft Yahei';
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 600px;
+            position: absolute;
+            top: -1000px;
+            right: 0;
+            left: 0;
+            width: 800px;
+            height: 600px;
+            margin: auto;
+            text-align: center;
+            border: 5px solid #000;
+            border-radius: 50%;
+        
+            /*此处写代码*/
+            -webkit-animation-name: flyin;
+                   animation-name: flyin;
+            -webkit-animation-timing-function:linear;
+                    animation-timing-function:linear;
+            -webkit-animation-duration:2s;
+                    animation-duration:2s;
+                    animation-fill-mode: forwards;
+            -webkit-animation-delay:-1s;
+                    animation-delay:-1s;
+       }
+       @keyframes flyin {
+           from {  top: -1000px;}
+           to {top: 0;}
+       }
+   </style>
+</head>
+<body>
+    <div>大家好，欢迎来到慕课网！</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    	<form action="" method="get">
+                <input type="url" oninput="checkit(this)" id="urlNode">
+                <input type="submit" value="提交">
+            </form>
+            <script>
+                console.log(urlNode.validity);
+                
+                function checkit(obj) {
+                    var it = obj.validity;
+                    //补充完整
+                    if(it.typeMismatch){
+                        obj.setCustomValidity("不符合http://");
+                    }else{
+                        obj.setCustomValidity("");
+                    }
+                }
+            </script>
+</body>
+</html>

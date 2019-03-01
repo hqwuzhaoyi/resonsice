@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ui.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="" class="navbar-brand head-pic">
+                        <img src="images/header.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-left" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">首页</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">生日 <span class="caret"></span></a>
+                            <div class="dropdown-menu row">
+                                <div class="dropdown-item col-xs-3 col-sm-3">
+                                    <h4>关系</h4>
+                                    <ul>
+                                        <li>朋友</li>
+                                        <li>关系</li>
+                                        <li>姐妹</li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-item col-xs-3 col-sm-3">
+                                    <h4>风味</h4>
+                                    <ul>
+                                        <li>巧克力</li>
+                                        <li>水果</li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-item col-xs-3 col-sm-3">
+                                    <h4>主旋律</h4>
+                                    <ul>
+                                        <li>心形</li>
+                                        <li>卡通</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">婚礼 <span class="caret"></span></a>
+                            <div class="dropdown-menu row">
+                                <div class="dropdown-item col-xs-3 col-sm-3">
+                                    <h4>关系</h4>
+                                    <ul>
+                                        <li>朋友</li>
+                                        <li>关系</li>
+                                        <li>姐妹</li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-item col-xs-3 col-sm-3">
+                                    <h4>风味</h4>
+                                    <ul>
+                                        <li>巧克力</li>
+                                        <li>水果</li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-item col-xs-3 col-sm-3">
+                                    <h4>主旋律</h4>
+                                    <ul>
+                                        <li>心形</li>
+                                        <li>卡通</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">专用 <span class="caret"></span></a>
+                            <div class="dropdown-menu row">
+                                <div class="dropdown-item col-xs-3 col-sm-3">
+                                    <h4>关系</h4>
+                                    <ul>
+                                        <li>朋友</li>
+                                        <li>关系</li>
+                                        <li>姐妹</li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-item col-xs-3 col-sm-3">
+                                    <h4>风味</h4>
+                                    <ul>
+                                        <li>巧克力</li>
+                                        <li>水果</li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-item col-xs-3 col-sm-3">
+                                    <h4>主旋律</h4>
+                                    <ul>
+                                        <li>心形</li>
+                                        <li>卡通</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">商铺 <span class="caret"></span></a>
+                            <div class="dropdown-menu row">
+                                <div class="dropdown-item col-xs-3 col-sm-3">
+                                    <h4>关系</h4>
+                                    <ul>
+                                        <li>朋友</li>
+                                        <li>关系</li>
+                                        <li>姐妹</li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-item col-xs-3 col-sm-3">
+                                    <h4>风味</h4>
+                                    <ul>
+                                        <li>巧克力</li>
+                                        <li>水果</li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-item col-xs-3 col-sm-3">
+                                    <h4>主旋律</h4>
+                                    <ul>
+                                        <li>心形</li>
+                                        <li>卡通</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <ul class="nav navbar-nav navbar-right" id="right">
+                        <li class="dropdown search">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false"><span class="glyphicon glyphicon-search"></span></a>
+                            <div class="dropdown-menu ">
+                                <div class="triangle"></div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search ">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">搜</button>
+                                    </span>
+                                </div>
+                        </li>
+                        <li class="dropdown user">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
+                            <div class="dropdown-menu ">
+                                <div class="triangle"></div>
+                                <form action="post">
+                                    <div class="form-group">
+                                        <label for="InputEmail">Email address</label>
+                                        <input type="email" class="form-control" id="InputEmail">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputPassword">Email address</label>
+                                        <input type="password" class="form-control" id="InputPassword">
+                                    </div>
+                                    <button type="submit" class="btn btn-default submit">登录</button>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> 记住
+                                        </label>
+                                    </div>
+
+                                </form>
+                                <div class="user-bottom">
+                                    <span>新用户？</span><b><a href="#">注册</a></b><span><a href="#">忘记密码</a></span>
+                                </div>
+                        </li>
+                        <li class="dropdown shopping-cart">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <div class="dropdown-menu ">
+                                <div class="triangle"></div>
+                                <span class="price">$0.00 (0)</span>
+                                <button class="btn btn-default" type="button">空</button>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class=" banner-left col-xs-6 col sm-6">
+                    <h1><span>IMOOC</span> 蛋糕</h1>
+                    <p>特别的日子，特别的你</p>
+                    <a href="#" class="btn btn-default">SHOP NOW</a>
+                </div>
+                <div class="banner-right col-xs-6 col sm-6">
+                    <img src="images/2.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-9 pic">
+                    <img src="images/g1.jpg" alt="" class="img-thumbnail">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div>
+                        <span>☆☆☆☆☆</span>
+                        <b>$95.00</b>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 pic">
+                    <img src="images/g2.jpg" alt="" class="img-thumbnail">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div>
+                        <span>☆☆☆☆☆</span>
+                        <b>$95.00</b>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 pic">
+                    <img src="images/g3.png" alt="" class="img-thumbnail">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div>
+                        <span>☆☆☆☆☆</span>
+                        <b>$95.00</b>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 pic">
+                    <img src="images/g3.png" alt="" class="img-thumbnail">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div>
+                        <span>☆☆☆☆☆</span>
+                        <b>$95.00</b>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 pic">
+                    <img src="images/g4.png" alt="" class="img-thumbnail">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div>
+                        <span>☆☆☆☆☆</span>
+                        <b>$95.00</b>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 pic">
+                    <img src="images/g5.png" alt="" class="img-thumbnail">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div>
+                        <span>☆☆☆☆☆</span>
+                        <b>$95.00</b>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 pic">
+                    <img src="images/g6.png" alt="" class="img-thumbnail">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div>
+                        <span>☆☆☆☆☆</span>
+                        <b>$95.00</b>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 pic">
+                    <img src="images/g7.png" alt="" class="img-thumbnail">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div>
+                        <span>☆☆☆☆☆</span>
+                        <b>$95.00</b>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 pic">
+                    <img src="images/g8.png" alt="" class="img-thumbnail">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div>
+                        <span>☆☆☆☆☆</span>
+                        <b>$95.00</b>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 pic">
+                    <img src="images/g3.png" alt="" class="img-thumbnail">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div>
+                        <span>☆☆☆☆☆</span>
+                        <b>$95.00</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe-title">Newsletter</div>
+            <div class="input-group">
+
+                <input type="email" class="form-control" placeholder="Email">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Subscribe</button>
+                </span>
+            </div>
+        </div>
+
+    </section>
+    <section class="footer-bottom">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-4 col-sm-3">
+                    <div class="title">COMPANY</div>
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Work Here</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Happenings</a></li>
+                        <li><a href="#">Dealer Locator</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 col-sm-3">
+                    <div class="title">COMPANY</div>
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Work Here</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Happenings</a></li>
+                        <li><a href="#">Dealer Locator</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 col-sm-3">
+                    <div class="title">COMPANY</div>
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Work Here</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Happenings</a></li>
+                        <li><a href="#">Dealer Locator</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4 col-sm-3">
+                    <div class="title">COMPANY</div>
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Work Here</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Happenings</a></li>
+                        <li><a href="#">Dealer Locator</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        Copyright ©2017 imooc.com All Rights Reserved | 京ICP备 13046642号-2
+    </footer>
+
+
+</body>
+
+</html>

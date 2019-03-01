@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>IE6~IE8下的渐变</title>
+    <style type="text/css">
+        div{
+            width: 400px;
+            height: 400px;   
+            background-color:yellow;
+            /*补充代码*/
+            background-size:100px 100px;
+            background-image:
+            linear-gradient(45deg,purple 25%,transparent 25%,transparent),
+            linear-gradient(-45deg,purple 25%,transparent 25%,transparent),
+            linear-gradient(45deg,transparent,transparent 75%,purple 75%),
+            linear-gradient(-45deg,transparent,transparent 75%,purple 75%);
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>  
+</body>
+</html>

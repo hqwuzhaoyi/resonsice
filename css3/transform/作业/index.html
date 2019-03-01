@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;padding:0;
+        }
+        .content {
+            width: 100vw;height: 100vh;
+            background: linear-gradient(rgba(196, 228, 253,0.5) 40%,rgba(255,255,255,1) 50%, rgba(148, 190, 89,1) );
+        }
+        .sky {
+            position: relative;
+            height: 50%;
+        }
+        .sky .cloud {
+            width: 100px;height: 100px;
+            position: relative;
+            border-radius: 50%;
+            top: 20%;
+            left: 50%;
+            background: #fff;
+        }
+        .sky .cloud::before {
+            content: "";  background: #fff;
+            width: 180px;
+            height: 50px;
+            position: absolute;
+            border-radius: 25px/50%;
+            top: 40px;
+            left: -60px;
+        }
+        .sky .cloud::after {
+            content: "";  background: #fff;
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            border-radius: 25px/50%;
+            top: 40px;
+            left: -50px;
+            transform: rotate(50deg);
+        }
+        .sky .cloud1 {
+            top: -20%;
+            left:40%;
+            transform: scale(.8);
+        }
+        .sky .cloud2 {
+            top: 0;
+            left:45%;
+            transform: scale(.8);
+        }
+        .sky .cloud3 {
+            position: relative;
+            top: -20%;
+            left:60%;
+            transform: scale(.7);
+        }
+        .sky .cloud4 {
+            top: -80%;
+            left:70%;
+            transform: scale(.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+            <div class="sky">
+                <div class="cloud"></div>
+                <div class="cloud cloud1"></div>
+                <div class="cloud cloud2"></div>
+                <div class="cloud cloud3"></div>
+                <div class="cloud cloud4"></div>
+            </div>
+            <div class="ground"></div>
+    </div>
+   
+</body>
+</html>

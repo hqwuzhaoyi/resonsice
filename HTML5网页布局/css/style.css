@@ -1,0 +1,64 @@
+.main{
+   position: relative;
+   width: 1200px;
+   height: 473px;
+   margin: 34px auto 0;
+}
+.main h1{
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 23px;
+}
+.main h1>samp{
+    font-size: 30px;
+    color: #7c7c7c;
+}
+.main >aside{
+    float: left;
+    width: 450px;
+}
+.main >aside >dl{
+    position: relative;
+    display: block;
+    height: 74px;
+    margin-bottom: 17px;
+}
+.main > aside >dl > dt{
+    position: absolute;
+    left: 92px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    text-decoration: underline;
+}
+.main>aside>dl>dd:first-of-type {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url(http://climg.mukewang.com/582e61290001787900500051.png);
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+.main>aside>dl>dd:last-of-type {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+}
+
+.main >article {
+    float: right;
+    width: 720px;
+    overflow: hidden;
+}
+.main>article>p,
+.main>article>img {
+    margin-bottom: 20px;
+}
+.main>article>img{
+    width: 720px;
+    height: 250px;
+}

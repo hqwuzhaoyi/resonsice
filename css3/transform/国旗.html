@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .square {
+            width: 1200px;
+            height: 800px;
+            background: red;
+            position: relative;
+        }
+
+        .star {
+            width: 0;height: 0;
+            position: relative;
+            border-bottom: 70px solid yellow;
+            border-left:100px solid transparent;
+            border-right:100px solid transparent;
+            -webkit-transform: rotate(35deg);
+               -moz-transform: rotate(35deg);
+                -ms-transform: rotate(35deg);
+                 -o-transform: rotate(35deg);
+                    transform: rotate(35deg);
+                   top: 180px;
+                   left: 50px;
+
+        }
+        .star:before {
+            width: 0;height: 0;
+            position: absolute;
+            border-bottom: 70px solid yellow;
+            border-left:100px solid transparent;
+            border-right:100px solid transparent;
+            -webkit-transform: rotate(75deg);
+               -moz-transform: rotate(75deg);
+                -ms-transform: rotate(75deg);
+                 -o-transform: rotate(75deg);
+                    transform: rotate(75deg);
+                    content: "";
+                    top: 0;
+                    left: -97px;
+        }
+        .star:after {
+            width: 0;height: 0;
+            position: absolute;
+            border-bottom: 70px solid yellow;
+            border-left:100px solid transparent;
+            border-right:100px solid transparent;
+            -webkit-transform: rotate(-70deg);
+               -moz-transform: rotate(-70deg);
+                -ms-transform: rotate(-70deg);
+                 -o-transform: rotate(-70deg);
+                    transform: rotate(-70deg);
+                    content: "";
+                    top: 0;
+                    left: -103px;
+        }
+        .star1 {
+            transform:translate(168px,-200px) scale(.3);
+        }
+        .star2 {
+            transform:translate(200px,-170px) scale(.3);
+        }
+        .star3 {
+            transform:translate(200px,-157px) scale(.3);
+        }
+        .star4 {
+            transform:translate(166px,-144px) scale(.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="square">
+        <div class="star"></div>
+        <div class="star star1"></div>
+        <div class="star star2"></div>
+        <div class="star star3"></div>
+        <div class="star star4"></div>
+    </div>
+</body>
+
+</html>

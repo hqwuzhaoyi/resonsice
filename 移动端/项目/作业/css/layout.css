@@ -1,0 +1,257 @@
+*{
+    margin: 0;padding: 0;
+}
+header {
+    border: none;
+    width: 100vw;height: 10vw;
+    box-sizing: border-box;
+    background: #b2c7cd;
+}
+header .layout{
+   height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25vw;
+}
+header .header-item {
+    font-size: 1vw;
+    width: 10vw;
+   text-align: center;
+   color: #757575;
+   cursor: pointer;
+}
+header .header-item.active {
+    color:#afafaf;
+}
+
+
+
+div.start {
+    width: 100vw;height: 68vw;
+    background: #b2c7cd;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.start img {
+    display: block;
+    position: relative;
+    width: 14vw;
+    margin-top: 7vw;
+}
+.start span {
+    display: block;
+    margin-top: 4vw;
+    color: #fff;
+    font-size: 1.5vw;
+  
+}
+.start button {
+    border: none;
+    width: 17vw;
+    height: 5vw;
+    background: rgb(255, 255, 255);
+    margin-top: 7vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+
+
+
+div.info {
+    width: 100vw;height: 55vw;
+}
+.info nav {
+    width: 100vw;
+    height: 8vw;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 .5px  0 .5px #eee;
+   
+}
+.info nav .info-item {
+    text-align: center;
+    color: #bababa;
+    font-size: 1.2vw;
+}
+.info nav .active {
+    color: #545454;
+}
+.info .content {
+    width: 100vw;
+    height: 47vw;
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info .content h1{
+    color: #626164;
+    font-size: 2vw;
+    text-align: center;
+}
+.info .content p {
+    color: #adadad;
+    width: 60vw;
+   margin-top: 2vw;
+   font-size: 1vw;
+}
+
+
+div.urlwelcome {
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vw;
+    background: #f4f4f4;
+    padding: 0 6vw;
+    box-sizing: border-box;
+}
+div.urlwelcome .left {
+    font-size: 2vw;
+}
+div.urlwelcome .right {
+    font-size: 1vw;
+}
+
+div.mainclass {
+    width: 100%;
+    height: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: url(../img/bg.jpg) no-repeat center bottom;
+}
+div.mainclass .title {
+    font-size: 3vw;
+}
+div.mainclass div.mainclasspic {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+}
+div.mainclass div.mainclasspic div {
+    width: 30%;
+    margin-top: 2vw;
+}
+div.mainclass div.mainclasspic  div img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: bold;
+    background: #f1f1f1;
+}
+
+@media screen and (max-width:414px){
+    header {
+        position: relative;z-index: 2;
+    }
+    header::after {
+        content: "imooc";
+        display: block;
+        position: absolute;top: 0%;left: 0%;
+        width: 100%;
+        height: 100%;
+        line-height: 10vw;
+      text-align: center;
+        color: #fff;
+        background: #7da6b2;
+        z-index: 2;
+    }
+    .headerbtn {
+        width:3vw;
+        height: 3vw;
+        border: 1px solid #fff;
+        border-radius: 10%;
+        position: absolute;
+        right: 10vw;
+        top: 50%;
+        transform: translate(0,-50%);
+        z-index: 9;
+    }
+    .layout {
+       position: relative; transition: all 1s;z-index: 1;
+    }
+    
+    
+    header .header-item {
+     position: absolute;
+     top: 5vw;
+     background: #7da6b2;
+     width:100vw;
+     height:7vw;
+     line-height: 7vw;
+     margin-top: 5vw;
+     z-index: 1;
+     border-bottom: 1px solid #89adb9;
+     box-sizing: border-box;
+     color: #fff;
+    
+    }
+    header .header-item   header .header-item:nth-child(2){
+        top: 12vw;
+    }
+  header .header-item:nth-child(3){
+    top: 12vw;
+    }
+  header .header-item:nth-child(4){
+        top: 19vw;
+    }
+
+  header .header-item:nth-child(5){
+        top: 26vw;
+    }
+
+
+
+
+
+
+
+
+    .info nav {
+        height: 13vw;
+    }
+    .info .content{
+        height: 86vw;
+    }
+    .info .content h1{
+        font-size: 4vw;
+        margin-bottom: 1vw;
+    }
+    div.urlwelcome{
+        height: 16vw;flex-direction: column;justify-content: center;
+    }
+    div.mainclass {
+        height: 115vw;
+    }
+    div.mainclass div.mainclasspic div {
+        width: 49%;
+        margin-top: 2vw;
+    }
+    footer {
+        height: 15vw;
+        font-size: 10px;
+        font-weight: normal;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-9</title>
+    <style type="text/css">
+        div {
+            font-family: Arial;
+            font-size: 72px;
+            font-weight: bold;
+            position: fixed;
+            right: 0;
+            left: 0;
+            bottom: 50px;
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            transform: rotate(90deg);
+            /*此处写代码*/
+            animation:gt 1s ease-in-out .5s infinite normal forwards ;
+        }
+        @keyframes gt {
+            from {bottom: 50px;}
+            to {
+                bottom:30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>&gt;</div>
+</body>
+</html>
